@@ -7,7 +7,8 @@
     "develop": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
-    "strapi": "strapi"
+    "strapi": "strapi",
+    "postinstall": "patch-package"
   },
   "devDependencies": {},
   "dependencies": {
@@ -17,7 +18,9 @@
     "@strapi/plugin-i18n": "4.15.2",
     "@strapi/plugin-users-permissions": "4.15.2",
     "@strapi/strapi": "4.15.2",
+    "patch-package": "^8.0.0",
     "pg": "8.8.0",
+    "postinstall-postinstall": "^2.1.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "5.3.4",
@@ -27,7 +30,7 @@
     "name": "A Strapi developer"
   },
   "strapi": {
-    "uuid": "608810a0-9290-4a3d-be78-085c84bf8870"
+    "uuid": "c6c2352e-243d-4b11-ab5c-444195db4e81"
   },
   "engines": {
     "node": ">=18.0.0 <=20.x.x",
