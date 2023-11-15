@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "platforms",
+  "info": {
+    "singularName": "platform",
+    "pluralName": "platforms",
+    "displayName": "platform",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "games": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::game.game",
+      "mappedBy": "platforms"
+    }
+  }
+}
